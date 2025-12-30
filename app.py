@@ -5,7 +5,7 @@ st.title("Download Path Test")
 
 file_path = "./test_file.txt"
 
-st.subheader("Testing Local Path")
+st.subheader("Testing Local Test")
 st.download_button(
     label="Download Local File",
     data=file_path,
@@ -14,7 +14,7 @@ st.download_button(
 
 st.divider()
 
-st.header("2. S3 URI Test")
+st.header("Download S3 URI Test")
 s3_uri = "s3://elevation-tiles-prod/v2/reliability.txt" 
 
 st.download_button(
@@ -25,7 +25,7 @@ st.download_button(
 
 st.divider()
 
-st.subheader("Testing URL Download")
+st.subheader("Download URL Test")
 st.download_button(
     label="Download Streamlit Readme",
     data="https://raw.githubusercontent.com/streamlit/streamlit/develop/README.md",
