@@ -27,7 +27,7 @@ st.divider()
 
 st.subheader("Testing URL Download")
 st.download_button(
-    label="Download Streamlit Logo",
-    data="https://streamlit.io/images/brand/streamlit-mark-color.png",
-    file_name="streamlit_logo.png"
+    label="Download Streamlit Readme",
+    data="https://raw.githubusercontent.com/streamlit/streamlit/develop/README.md",
+    file_name="streamlit_readme.md"
 )
