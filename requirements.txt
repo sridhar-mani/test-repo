@@ -1,2 +1,2 @@
-https://github.com/sridhar-mani/streamlit/archive/refs/heads/feature/download-string.zip
+git+https://github.com/sridhar-mani/streamlit.git@feature/download-string#subdirectory=lib
 boto3
