@@ -16,12 +16,14 @@ st.divider()
 
 st.header("Download S3 URI Test")
 s3_uri = "s3://elevation-tiles-prod/v2/reliability.txt" 
-
-st.download_button(
-    label="Download S3 File",
-    data=s3_uri,
-    file_name="s3_test.txt"
-)
+try:
+    st.download_button(
+        label="Download S3 File",
+        data=s3_uri,
+        file_name="s3_test.txt"
+    )   
+except Exception as e:
+    st.error(f"Error downloading S3 file: {e}")
 
 st.divider()
 
