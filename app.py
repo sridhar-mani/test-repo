@@ -29,7 +29,7 @@ st.divider()
 
 st.subheader("Download URL Test")
 st.download_button(
-    label="Download Streamlit Readme",
+    label="Download Test File from URL",
     data="http://textfiles.com/100/adventur.txt",
     file_name="test.txt"
 )
