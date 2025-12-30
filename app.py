@@ -15,13 +15,12 @@ st.download_button(
 st.divider()
 
 st.header("2. S3 URI Test")
-st.write("Note: This requires 'boto3' and AWS secrets configured.")
 s3_uri = "s3://elevation-tiles-prod/v2/reliability.txt" 
 
 st.download_button(
     label="Download S3 File",
     data=s3_uri,
-    file_name="s3_test.csv"
+    file_name="s3_test.txt"
 )
 
 st.divider()
